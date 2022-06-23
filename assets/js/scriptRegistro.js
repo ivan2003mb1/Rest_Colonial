@@ -16,3 +16,28 @@ form.addEventListener("submit", e=>{
         warnings += `El nombre no es valido <br>`
     }
 })
+form.addEventListener("submit", e=>{
+    e.preventDefault()
+    if(apellido.nodeValue.length<15){
+        warnings += `El apellido no es valido <br>`
+    }
+})
+form.addEventListener("submit", e=>{
+    e.preventDefault()
+    if(usuario.nodeValue.length<20){
+        warnings += `El usuario no es valido <br>`
+    }
+})
+form.addEventListener("submit", e=>{
+    e.preventDefault()
+    if(tel.nodeValue.length<11){
+        warnings += `El telefono no es valido <br>`
+    }
+})
+form.addEventListener("submit", e=>{
+    e.preventDefault()
+    if(confirmar.nodeValue.length==contraseña.nodeValue.lenght){
+        warnings += `Las contraseñas son distintas <br>`
+    }
+})
+
